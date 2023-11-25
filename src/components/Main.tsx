@@ -45,49 +45,47 @@ const Main: React.FC = () => {
   }
 
   return (
-    <>
-      <div className="items-center flex flex-col mt-28">
-        <Image src={googleLogo} alt="Google-Logo" height={100} width={270} />
-        <form
-          onSubmit={(e) => onSearchSubmit({ e })}
-          className="flex border mt-7 px-5 py-2 rounded-full w-2/5 items-center hover:shadow-md"
-        >
-          <AiOutlineSearch className="text-xl text-slate-400" />
-          <input
-            type="text"
-            className="w-full focus:outline-none ml-4"
-            onChange={(e) => setSearch(e.target.value)}
-            value={search}
+    <div className="items-center flex flex-col mt-10 md:mt-20 lg:mt-28">
+      <Image src={googleLogo} alt="Google-Logo" height={100} width={270} />
+      <form
+        onSubmit={(e) => onSearchSubmit({ e })}
+        className="flex border mt-7 px-2 md:px-5 py-1 md:py-2 rounded-full w-11/12 md:w-2/3 lg:w-2/5 items-center hover:shadow-md"
+      >
+        <AiOutlineSearch className="text-lg md:text-xl text-slate-400" />
+        <input
+          type="text"
+          className="w-full focus:outline-none ml-2 md:ml-4"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
+        {listening ? (
+          <BsFillMicFill
+            onClick={stopListening}
+            className="text-2xl md:text-3xl text-slate-400 ml-2 md:mr-5 cursor-pointer"
           />
-          {listening ? (
-            <BsFillMicFill
-              onClick={stopListening}
-              className="text-3xl text-slate-400 mr-5 cursor-pointer"
-            />
-          ) : (
-            <BiMicrophone
-              onClick={startListening}
-              className="text-3xl text-slate-400 mr-5 cursor-pointer"
-            />
-          )}
-          <AiFillCamera className="text-3xl text-slate-400 cursor-pointer" />
-        </form>
-        <div className="flex mt-7">
-          <button
-            className="bg-slate-100 mr-3 py-2 px-4 text-sm rounded hover:border"
-            onClick={(e) => onSearchSubmit({ e })}
-          >
-            Google Search
-          </button>
-          <button
-            className="bg-slate-100 py-2 px-4 text-sm  rounded hover:border"
-            onClick={() => router.push("http://www.google.com/doodles")}
-          >
-            I'm Feeling Lucky
-          </button>
-        </div>
+        ) : (
+          <BiMicrophone
+            onClick={startListening}
+            className="text-2xl md:text-3xl text-slate-400 ml-2 md:mr-5 cursor-pointer"
+          />
+        )}
+        <AiFillCamera className="text-2xl md:text-3xl text-slate-400 cursor-pointer" />
+      </form>
+      <div className="flex mt-5 md:mt-7">
+        <button
+          className="bg-slate-100 mr-2 md:mr-3 py-1 md:py-2 px-2 md:px-4 text-xs md:text-sm rounded hover:border"
+          onClick={(e) => onSearchSubmit({ e })}
+        >
+          Google Search
+        </button>
+        <button
+          className="bg-slate-100 py-1 md:py-2 px-2 md:px-4 text-xs md:text-sm rounded hover:border"
+          onClick={() => router.push("http://www.google.com/doodles")}
+        >
+          I'm Feeling Lucky
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 
