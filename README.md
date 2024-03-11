@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Google Search Clone App!
+
+Hey there! 👋 I'm Manu Bharadwaj. If you find this project useful or interesting, don't forget to give it a ⭐️!
+
+## About Me
+
+I'm Manu Bharadwaj, a passionate Software Engineer. 
+
+## Features
+
+- 📦 Next & React
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1.Clone the repository.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. npm install for installing node_modules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. npm start to run the application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4.Start Changing the Code according to your expectations. 
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## How to Contribute
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you'd like to contribute to this project, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository
+2. Create a new branch
+3. Make your changes and commit them
+4. Push to your fork and open a pull request
 
-## Deploy on Vercel
+For major changes, please open an issue first to discuss what you would like to change.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Issues and Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you encounter any issues or have questions, feel free to open an issue. I'll do my best to help you out.
+
+## Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/manu-bharadwaj-3507a345/)
+
+Let's connect and share our thoughts!
+
+---
+
+**If you find this project helpful, please consider giving it a ⭐️!**
+
+Thank you for stopping by! 🌟
+
+
